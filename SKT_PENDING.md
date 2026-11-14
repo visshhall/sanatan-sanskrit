@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Project | SKT — Sanatan Sanskrit Learning App |
-| Tracker version | 1.1 |
+| Tracker version | 1.2 |
 | Matches reference doc | SKT_REFERENCE.md v1.2 |
 | Last updated | 14 November 2026 |
 
@@ -14,7 +14,7 @@ Status key: ⏳ Waiting on owner · 🔄 To do (Claude) · ✅ Done
 ## 1. Waiting on the owner
 | # | Item | Ref |
 |---|---|---|
-| O7 | Create an **empty private repo** named `sanatan-sanskrit` on GitHub (no README, no licence, no .gitignore), then tell Claude. This Claude session cannot create new repos, but once the empty repo exists it can push to it. | REF header, D9 |
+| — | Nothing at the moment | |
 
 ## 2. Phase 0 — remaining work (Claude)
 | # | Task | Status |
@@ -27,7 +27,7 @@ Status key: ⏳ Waiting on owner · 🔄 To do (Claude) · ✅ Done
 | P0-6 | Hindi sources: parked (D5: English first). Revisit before the Hindi layer; Satwalekar is public domain from 1 Jan 2029 | ⏸ Parked |
 | P0-7 | Draft permission-request emails to TITUS and sanskritdocuments.org (Yajurveda / Atharvaveda gap). Owner sends them; Claude does not send anything. Hindi publishers later. | 🔄 |
 | P0-8 | Confirm DCS licence at source | 🔄 (can wait for Phase 2) |
-| P0-9 | Push docs to `sanatan-sanskrit` (local repo with first commit is ready) | ⏳ (after O7) |
+| P0-9 | Push docs to `sanatan-sanskrit` | ✅ |
 | P0-10 | Phase 0 sign-off: all Layer 1 sources ✅ or consciously deferred | 🔄 |
 
 ## 3. Later phases (parked, not started)
@@ -55,4 +55,4 @@ Status key: ⏳ Waiting on owner · 🔄 To do (Claude) · ✅ Done
 | 14 Nov 2026 | Content review sample 01 (Ṛgveda 1.1.1) prepared |
 | 14 Nov 2026 | Decisions D4–D9 recorded (personal/free forever; English first; Griffith; sample accepted; Electron .exe; repo approved) |
 | 14 Nov 2026 | Animated/interactive requirement captured (REF §5.1) |
-| 14 Nov 2026 | Local git repo initialised with docs (first commit) |
+| 14 Nov 2026 | Private repo `visshhall/sanatan-sanskrit` created by owner; Claude GitHub access granted; docs pushed to `main` |

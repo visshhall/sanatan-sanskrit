@@ -9,7 +9,7 @@
 | Document version | 1.2 |
 | Last updated | 14 November 2026 |
 | Owner | Vishal Singh |
-| Repository | `sanatan-sanskrit` (private GitHub), approved by owner. Must be created on GitHub by the owner (this Claude session cannot create new repos); local repo with docs is ready to push |
+| Repository | `visshhall/sanatan-sanskrit` (private GitHub), branch `main` |
 
 > **How to use this document in a new chat:** Upload this file and SKT_PENDING.md at the start of the SKT chat and say: *"This is the SKT reference document. Read it fully, then continue from SKT_PENDING.md."* Everything needed to continue is in here.
 
@@ -240,4 +240,4 @@ Every piece of code must be commented so that anyone can understand it without a
 |---|---|---|
 | 14 Nov 2026 | Doc 1.0 | Initial reference document created from the planning discussion. No code yet. |
 | 14 Nov 2026 | Doc 1.1 | Decisions D1–D3 recorded (Windows only; English + Hindi; repo `sanatan-sanskrit`). Phase 0 started: licence register (§4.1–4.3) built from source headers; Yajurveda, Atharvaveda Śaunaka and Hindi gaps identified; principle 7 added; new open decisions D4–D9; tech notes updated (Electron proposed, fonts, ḷ mapping). Review sample 01 (Ṛgveda 1.1.1) created. No code yet. |
-| 14 Nov 2026 | Doc 1.2 | Decisions D4–D9 recorded: personal and free forever (all NC sources usable); English first, Hindi later; Griffith as main English Ṛgveda (Jamison & Brereton noted as copyrighted); sample 01 content accepted; Electron with `.exe` installer; repo approved. New §5.1: animated, interactive presentation requirement with candidate ideas; principle 3 extended to cover dignified motion; Phase 1 split into 1a (design proposal) and 1b (build). Repo could not be created from this session, so a local repo is ready and the owner creates the empty GitHub repo. No code yet. |
+| 14 Nov 2026 | Doc 1.2 | Decisions D4–D9 recorded: personal and free forever (all NC sources usable); English first, Hindi later; Griffith as main English Ṛgveda (Jamison & Brereton noted as copyrighted); sample 01 content accepted; Electron with `.exe` installer; repo approved. New §5.1: animated, interactive presentation requirement with candidate ideas; principle 3 extended to cover dignified motion; Phase 1 split into 1a (design proposal) and 1b (build). Owner created the private repo `visshhall/sanatan-sanskrit` and granted Claude access; docs pushed. No code yet. |
