@@ -6,7 +6,7 @@
 | Project code | **SKT** |
 | Sister project | **KB** — Knowledge Bank app (separate chat, separate repo, never mixed) |
 | Current version | SKT v0.0 — Phase 0 (sources & licensing) in progress, no code written yet |
-| Document version | 1.2 |
+| Document version | 1.3 |
 | Last updated | 14 November 2026 |
 | Owner | Vishal Singh |
 | Repository | `visshhall/sanatan-sanskrit` (private GitHub), branch `main` |
@@ -63,12 +63,18 @@ A scripture library and Sanskrit learning app. Every verse is shown in its origi
 | S1 | **VedaWeb** (University of Cologne), repo `VedaWebProject/vedaweb-data` | Ṛgveda complete: accented Devanagari (Eichler), accented IAST (van Nooten & Holland), padapāṭha (Latin, unaccented), metrically restored text | **CC BY-NC-SA 4.0** for each text version (read from `vedaweb_corpus.tei` header) | 14 Nov 2026 | ✅ **Primary Ṛgveda source** |
 | S2 | VedaWeb, University of Zurich annotation | Word-level stem + grammar for every Ṛgveda word | **CC BY 4.0** | 14 Nov 2026 | ✅ Powers the word table for Ṛgveda |
 | S3 | **GRETIL** (Göttingen) | RV, RV padapāṭha, RV Khilāni, Atharvaveda Paippalāda, Sāmaveda (Kauthuma, input A. Pandey), principal Upaniṣads, epics, Purāṇas | TEI files carry **CC BY-NC-SA 4.0**, plus a "provided in good faith" note (confirmed in a sample GRETIL TEI file) | 14 Nov 2026 | 🟡 Check the header of **each file** at import |
-| S4 | **TITUS** (Frankfurt) | Accented Atharvaveda Śaunaka, Taittirīya Saṃhitā, Vājasaneyi Saṃhitā, Maitrāyaṇī, Kāṭhaka | GRETIL describes these as "restricted download / proprietary format" | 14 Nov 2026 | 🔴 Needs permission |
-| S5 | **Sanskrit Wikisource** | Taittirīya Saṃhitā (an unaccented "विस्वरः" version found), RV padapāṭha in Devanagari; accented Yajurveda still to be checked | Wikimedia standard: **CC BY-SA 4.0 + GFDL** | 14 Nov 2026 (partial, site rate-limited) | 🟡 Check accents and page licences in the next Phase 0 session |
-| S6 | **sanskritdocuments.org** | Many accented texts (Taittirīya material, Upaniṣads, sūktas) | "For personal study and research… not to be copied or reposted… or for commercial purpose **without permission**" | 14 Nov 2026 | 🔴 Needs written permission to bundle |
+| S4 | **TITUS** (Frankfurt) | Accented Atharvaveda Śaunaka, Taittirīya Saṃhitā, Vājasaneyi Saṃhitā, Maitrāyaṇī, Kāṭhaka | GRETIL describes these as "restricted download / proprietary format" | 14 Nov 2026 | 🔴 Needs permission. **No longer needed for the texts**, since Wikisource now covers them (S8–S11). Optional: ask TITUS whether the Wikisource copies derive from theirs (see PENDING P0-7) |
+| S5 | **Sanskrit Wikisource** (`sa.wikisource.org`), general | Community-typed Vedic texts; see S8–S11 for the accented ones. Also Kāṭhaka Saṃhitā (**unaccented**, "विस्वरः"), Maitrāyaṇī Saṃhitā, Rudrāṣṭādhyāyī | Wikimedia standard: **CC BY-SA 4.0** (read from the licence link in each page) | 15 Nov 2026 | 🟡 See provenance caveat under the table |
+| S6 | **sanskritdocuments.org** | Many accented texts (Taittirīya material, Upaniṣads, sūktas) | "For personal study and research… not to be copied or reposted… or for commercial purpose **without permission**" | 14 Nov 2026 | 🔴 Not needed for Layer 1 now. Keep for Layer 2 (Upaniṣads) if other sources fall short |
 | S7 | **Ambuda** (`ambuda-org/texts`) | Curated GRETIL texts, rare Upaniṣads (Adyar manuscripts) | Per-text licence in each TEI header; project aims for CC0 | 14 Nov 2026 | 🟡 Check per text |
+| S8 | Wikisource: **Taittirīya Saṃhitā** (Kṛṣṇa Yajurveda), pages `तैत्तिरीयसंहिता-१-४` and `-५-७` | Accented Devanagari (U+0951 / U+0952 marks; 25,755 + 40,450 on the kāṇḍa 1–4 page alone), verse-numbered by kāṇḍa.prapāṭhaka.anuvāka | CC BY-SA 4.0 | 15 Nov 2026 (kāṇḍas 1–4 page checked; 5–7 page not yet opened) | 🟡 Usable; caveat below |
+| S9 | Wikisource: **Śukla Yajurveda**, `शुक्लयजुर्वेदः/अध्यायः ०१`–`४०` | 40 adhyāyas, accented (chapter 1: 371 + 474 marks, plus U+1CEA, U+1CED, U+A8F3) | CC BY-SA 4.0 | 15 Nov 2026 (chapter 1 only) | 🟡 Usable; recension (expected Mādhyandina, from the 40 chapters) and the other 39 chapters to be checked |
+| S10 | Wikisource: **Atharvaveda Śaunaka**, `शौनकसंहिता (सस्वरा)` | Accented, kāṇḍa → sūkta → mantra (40,893 + 52,735 marks). Wikisource also has a Paippalāda page and an Atharvaveda devatā list | CC BY-SA 4.0 | 15 Nov 2026 | 🟡 Usable; completeness to be counted against the known number of mantras |
+| S11 | Wikisource: **Sāmaveda Kauthuma**, `सामवेदः/कौथुमीया/संहिता/सस्वरा पूर्णा` (also Jaiminīya and Rāṇāyanīya pages) | Complete Pūrvārcika + Uttarārcika with **sāman-notation accents** (U+A8E1, A8E2, A8E3, A8EF, A8EB, A8EC, A8F3: the Devanagari Extended block), a different system from the Ṛg/Yajur marks | CC BY-SA 4.0 | 15 Nov 2026 | 🟡 Usable; this notation needs its own display rules and font check (see §8) |
 
-**Gap found: the Yajurveda.** No source has yet been confirmed that is both accented and licence-clear for the **Taittirīya Saṃhitā** (Kṛṣṇa) or the **Vājasaneyi Saṃhitā** (Śukla). GRETIL only points to TITUS (restricted). Next steps are in SKT_PENDING.md (Wikisource check; permission requests to TITUS and sanskritdocuments.org). The accented **Atharvaveda Śaunaka** has the same problem.
+**Gap closed (15 Nov 2026): accented Yajurveda, Sāmaveda and Atharvaveda now have a licence-labelled source: Sanskrit Wikisource (S8–S11).**
+
+**Provenance caveat (important):** each of these Wikisource pages was created by a **single bulk paste** with no source named in the edit summary (Taittirīya: an anonymous editor, May 2015; Atharvaveda and Sāmaveda: user *Vishvas vasuki*, 2020; Śukla Yajurveda: created by user *Puranastudy* in 2017, 36 revisions in total). The CC BY-SA label is the uploader's, and we cannot see where the text came from. It may have been copied from a source with stricter terms (for example TITUS). Because SKT is personal and never distributed (D4), the practical risk is low, but the text's **accuracy is also unproven**. Therefore, before Layer 1 import: (a) cross-check a sample of each text against a second source (GRETIL where it has the text; TITUS pages for reading); (b) count mantras against the known totals; (c) show you a sample for review (principle 4). Also unverified: the Taittirīya kāṇḍa 5–7 page, and every Śukla chapter except 1.
 
 #### B. English translations
 
@@ -78,10 +84,12 @@ A scripture library and Sanskrit learning app. Every verse is shown in its origi
 | E2 | Ṛgveda (selected hymns): H. Oldenberg, SBE 46 (1897) | 1920 | Public domain | VedaWeb, CC BY-NC-SA 4.0 | ✅ Optional second translation |
 | E3 | Ṛgveda (selected hymns): Max Müller, Macdonell | 1900 / 1930 | Public domain | VedaWeb, CC BY-NC-SA 4.0 | ✅ Optional |
 | E0 | Ṛgveda: S. W. Jamison & J. P. Brereton (OUP, 2014), the modern scholarly standard | Living authors | **Copyrighted** | — | 🔴 Not usable. Recorded so the choice of Griffith is understood: it is the best **complete, usable** English Ṛgveda, not the most modern one. |
-| E4 | Sāmaveda, White Yajurveda, Atharvaveda: Griffith | 1906 | Public domain | Source of digital text still to be chosen | 🟡 |
-| E5 | Black Yajurveda (Taittirīya): A. B. Keith (1914) | 1944 | Public domain | Still to be chosen | 🟡 |
-| E6 | Atharvaveda: W. D. Whitney, revised by C. R. Lanman (1905) | 1894 / 1941 | Public domain | Still to be chosen | 🟡 |
+| E4 | Sāmaveda, White Yajurveda, Atharvaveda: R. T. H. Griffith | 1906 | Public domain | archive.org scans: *Texts of the White Yajurveda* (`textswhiteyajur01grifgoog`, 1899); *Hymns of the Atharvaveda* (`hymnsatharvaved01unkngoog`, 1895; vol. 2 also on archive.org); *Hymns of the Sāmaveda* (`hymnsofsmaveda00grifiala`, 1907). **Scans plus OCR text, not verse-aligned** | 🟡 |
+| E5 | Black Yajurveda (Taittirīya): A. B. Keith (1914) | 1944 | Public domain | archive.org scan, Harvard Oriental Series 18–19 (e.g. `in.gov.ignca.23763` and `in.gov.ignca.23764`). **Scan plus OCR, not verse-aligned** | 🟡 |
+| E6 | Atharvaveda: W. D. Whitney, revised by C. R. Lanman (1905) | 1894 / 1941 | Public domain | archive.org scan, Harvard Oriental Series 7–8 (`atharvavedasamhi01whituoft`, `atharvavedasamh00lammgoog`). **Scan plus OCR, not verse-aligned** | 🟡 |
 | E7 | Upaniṣads: Max Müller, SBE 1 & 15 | 1900 | Public domain | Still to be chosen | 🟡 (Layer 2) |
+
+**Reality check on the English translations:** the translations are free to use, but except for the Ṛgveda (E1–E3, already verse-aligned in VedaWeb) they exist only as **page scans with machine-read text**. Turning them into verse-by-verse data means OCR clean-up and alignment to the Wikisource numbering. That is real work and an accuracy risk in a sacred text, so each text will be done as its own step, with a sample for your review before import. Griffith's Sāmaveda numbering (Benfey's order) also needs mapping to the Kauthuma numbering used in S11.
 
 #### C. Hindi translations (the hard part)
 
@@ -103,9 +111,9 @@ A scripture library and Sanskrit learning app. Every verse is shown in its origi
 | D1 | **Monier-Williams 1899**, Cologne digital edition (© The Sanskrit Library & Thomas Malten) | Tap-a-word meanings | **CC BY-NC-SA 3.0** (read from `mwheader.xml`); credit must be shown "exactly as described" | ✅ |
 | D2 | Digital Corpus of Sanskrit (DCS), Oliver Hellwig | Grammar data beyond the Ṛgveda (Phase 2) | CC BY 4.0 (per Ambuda's DCS mirror) | 🟡 Confirm at source in Phase 2 |
 | D3 | **Vidyut** (Ambuda), Rust toolkit | Sandhi splitting, morphology, transliteration (Phase 2) | **MIT** (read from `Cargo.toml`) | ✅ |
-| F1 | **Noto Serif Devanagari** | Main Devanagari font | SIL OFL 1.1; covers the Vedic Extensions block | ✅ Rendering test in Phase 1 |
-| F2 | Tiro Devanagari Sanskrit | Alternative scholarly font | SIL OFL; extended with Vedic signs | ✅ Rendering test in Phase 1 |
-| F3 | Shobhika (IIT Bombay) | Alternative scholarly font | SIL OFL 1.1 | ✅ Rendering test in Phase 1 |
+| F1 | **Noto Serif Devanagari** (and Noto Sans Devanagari) | Main Devanagari font | SIL OFL 1.1 | ✅ **Coverage tested 15 Nov 2026**: contains all the accent characters used by S8–S11 (U+0951/0952, U+1CEA, U+1CED, U+A8E1–A8F3) and ळ. Visual rendering test still due in Phase 1 |
+| F2 | Tiro Devanagari Sanskrit | Alternative scholarly font | SIL OFL | ✅ **Coverage tested 15 Nov 2026**: also contains all of them (Vedic Extensions 43/48, Devanagari Extended 30/32). Rendering test in Phase 1 |
+| F3 | Shobhika (IIT Bombay) | Alternative scholarly font | SIL OFL 1.1 (read from `OFL.txt` in the repo) | 🟡 Licence confirmed, but the repository holds only source files, not a ready font, so coverage was **not** tested. Low priority |
 
 ### 4.3 What "NC" (Non-Commercial) means for SKT
 Almost every high-quality source above (S1, S3, D1, and the digital English texts) is licensed **CC BY-NC-SA**. In practice:
@@ -162,7 +170,7 @@ Candidate ideas (to be shown as a design proposal for owner approval in Phase 1,
 
 | Phase | Name | What gets done | Status |
 |---|---|---|---|
-| 0 | Sources & licensing | Identify, verify and record the licence of every source; finalise platform and tech stack | **In progress.** Register v1 done; Yajurveda, Atharvaveda and Hindi gaps open |
+| 0 | Sources & licensing | Identify, verify and record the licence of every source; finalise platform and tech stack | **Nearly complete.** All four Vedas have an accented, licence-labelled source (Ṛgveda: VedaWeb; the rest: Wikisource with provenance caveat). Hindi parked (D5). Remaining: optional TITUS provenance email; sign-off |
 | 1 | Reader | **Step 1a:** interaction and visual design proposal (mock-ups of the verse screen and the animations in §5.1) for owner approval. **Step 1b:** text display, scripts/transliteration, navigation, source labels, first animations | Not started |
 | 2 | Meaning | Word-tap dictionary, grammar info, sandhi splitting | Not started |
 | 3 | Learning | Sanskrit course, daily verse, memorisation, progress | Not started |
@@ -198,6 +206,7 @@ Candidate ideas (to be shown as a design proposal for owner approval in Phase 1,
 - Source data arrives as **TEI-XML** (VedaWeb, GRETIL, Ambuda) and plain text. Phase 1 will convert it once, at build time, into a local database bundled with the app. Every row keeps its source ID so the source label is automatic.
 - **Vedic accents** use the Unicode Devanagari stress signs (U+0951 ॑, U+0952 ॒) and the Vedic Extensions block (U+1CD0–1CFF). Candidate fonts: Noto Serif Devanagari, Tiro Devanagari Sanskrit, Shobhika (all SIL OFL). Real rendering tests in Phase 1.
 - Transliteration between scripts will be done by code (e.g. Vidyut or an equivalent library), never by AI.
+- **Two accent systems.** Ṛgveda, Yajurveda and Atharvaveda texts use the Vedic marks U+0951 (॑) and U+0952 (॒) (the Śukla Yajurveda also U+1CEA, U+1CED). The Sāmaveda text uses sāman notation from the Devanagari Extended block (U+A8E1–A8F3). The reader must display each correctly and must never convert one to the other. Font character coverage was tested (F1, F2); correct visual placement of the marks is tested in Phase 1.
 - Known conversion detail: some sources write Vedic ḷ (ळ) as "l̥" or "ḷ"; the converter must map it to ळ, not ऌ. Found while building sample 01.
 
 ## 9. How we work on this project
@@ -241,3 +250,4 @@ Every piece of code must be commented so that anyone can understand it without a
 | 14 Nov 2026 | Doc 1.0 | Initial reference document created from the planning discussion. No code yet. |
 | 14 Nov 2026 | Doc 1.1 | Decisions D1–D3 recorded (Windows only; English + Hindi; repo `sanatan-sanskrit`). Phase 0 started: licence register (§4.1–4.3) built from source headers; Yajurveda, Atharvaveda Śaunaka and Hindi gaps identified; principle 7 added; new open decisions D4–D9; tech notes updated (Electron proposed, fonts, ḷ mapping). Review sample 01 (Ṛgveda 1.1.1) created. No code yet. |
 | 14 Nov 2026 | Doc 1.2 | Decisions D4–D9 recorded: personal and free forever (all NC sources usable); English first, Hindi later; Griffith as main English Ṛgveda (Jamison & Brereton noted as copyrighted); sample 01 content accepted; Electron with `.exe` installer; repo approved. New §5.1: animated, interactive presentation requirement with candidate ideas; principle 3 extended to cover dignified motion; Phase 1 split into 1a (design proposal) and 1b (build). Owner created the private repo `visshhall/sanatan-sanskrit` and granted Claude access; docs pushed. No code yet. |
+| 15 Nov 2026 | Doc 1.3 | Phase 0 sources: accented Yajurveda (Taittirīya, Śukla), Atharvaveda Śaunaka and Sāmaveda Kauthuma found on Sanskrit Wikisource (CC BY-SA 4.0), with a recorded provenance caveat; **corrected an error in v1.1/1.2, which wrongly said the Wikisource Taittirīya text was unaccented** (that was the Kāṭhaka). English translation scans identified on archive.org (Griffith, Keith, Whitney) with an alignment-work note. Font coverage tested for Noto and Tiro; Shobhika untested. Two accent systems documented in §8. No code yet. |
